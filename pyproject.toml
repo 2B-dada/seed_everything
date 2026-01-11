@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seed_everything"                  # pip install 用的名字
+version = "0.1.0"
+description = "eliminate non-deterministic behavior from random seed and other aspect."
+readme = "README.md"
+requires-python = ">=3.6"
+authors = [
+  { name = "2B_dada", email = "pmbczq@foxmail.com" }
+]
+dependencies = [
+  "numpy"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
